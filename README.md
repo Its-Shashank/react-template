@@ -13,8 +13,7 @@
 An enterprise react template application showcasing - Testing strategies, Global state management, middleware support, a network layer, component library integration, localization, PWA support, route configuration, lazy loading, and Continuous integration & deployment.
   </p>
 
-  ___
-
+---
 
   <p>
     <h4>
@@ -31,9 +30,11 @@ An enterprise react template application showcasing - Testing strategies, Global
     </a>
   </div>
 
-  ___
+---
 
-  <span>We’re always looking for people who value their work, so come and join us. <a href="https://www.wednesday.is/hiring">We are hiring!</a></span>
+<span>We’re always looking for people who value their work, so come and join us. <a href="https://www.wednesday.is/hiring">We are hiring!</a></span>
+<img src="demo.gif">
+
 </div>
 
 ### Built using [react-floki](https://github.com/wednesday-solutions/react-floki)
@@ -151,13 +152,13 @@ yarn generate
 
 For documentation take a look at: [react-floki](https://github.com/wednesday-solutions/react-floki)
 
-## Gotchas	
+## Gotchas
 
 - For github pages to work on an [arbitrary route](https://wednesday-solutions.github.io/react-template/) we have the used some workarounds.
-For production builds deployed directly on `/` you need to make the following changes
+  For production builds deployed directly on `/` you need to make the following changes
   1. [publicPath: process.env.NODE_ENV === 'production' ? '/react-template/' : '/'](https://github.com/wednesday-solutions/react-template/blob/master/internals/webpack/webpack.base.babel.js#L29)
-   should be: ```publicPath: '/'	```
+     should be: `publicPath: '/'`
   2. [relativePaths: process.env.NODE_ENV === 'production'](https://github.com/wednesday-solutions/react-template/blob/master/internals/webpack/webpack.prod.babel.js#L85)
-  should be: ```relativePaths: false,```
-  2. [const history = createBrowserHistory({ basename: baseUrl });](https://github.com/wednesday-solutions/react-template/blob/master/app/utils/history.js#L3)
-  should be:  ```const history = createBrowserHistory();```
+     should be: `relativePaths: false,`
+  3. [const history = createBrowserHistory({ basename: baseUrl });](https://github.com/wednesday-solutions/react-template/blob/master/app/utils/history.js#L3)
+     should be: `const history = createBrowserHistory();`
