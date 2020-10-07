@@ -6,5 +6,13 @@ export default {
       padding: 20
     },
     exact: true
+  },
+  itunes: {
+    route: '/itunes',
+    props: {
+      maxwidth: 1200,
+      padding: 20
+    },
+    exact: true
   }
 };

@@ -1,14 +1,18 @@
 {
   "repo_list": "Repository List",
   "repo_search": "Repository Search",
+  "itune_search": "ITune Search",
   "respo_search_default": "Search for a repository by entering it's name in the search box",
   "get_repo_details": "Get details of repositories",
-  "search_query": "Search query: {repoName}",
+  "get_itune_details": "Get details of itunes",
+  "search_query": "Search query: {ituneName}",
   "matching_repos": "Total number of matching repos: {totalCount}",
+  "matching_itunes": "Total number of matching itunes: {totalCount}",
   "something_went_wrong": "Sorry. Something went wrong! Please try again in sometime.",
   "stories": "Go to Storybook",
   "repository_name": "Repository Name: {name}",
   "repository_full_name": "Repository full name: {fullName}",
+  "itune_name": "ITune name: {name}",
   "repository_stars": "Repository stars: {stars}",
   "wednesday_solutions": "Wednesday Solutions"
 }
