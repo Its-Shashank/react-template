@@ -4,7 +4,7 @@ import camelCase from 'lodash/camelCase';
 import { mapKeysDeep } from './index';
 
 const { GITHUB_URL } = process.env;
-const { ITUNES_URL } = process.env;
+const ITUNES_URL = 'https://itunes.apple.com/';
 const apiClients = {
   github: null,
   itunes: null,

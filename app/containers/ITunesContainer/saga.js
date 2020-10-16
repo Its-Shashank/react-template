@@ -1,7 +1,6 @@
 import { put, call, takeLatest } from 'redux-saga/effects';
 import { getITunes } from '@services/itunesApi';
 import { iTunesContainerTypes, iTunesContainerCreators } from './reducer';
-// Individual exports for testing
 const { REQUEST_GET_I_TUNES } = iTunesContainerTypes;
 const { successGetITunes, failureGetITunes } = iTunesContainerCreators;
 
